@@ -1,2 +1,2 @@
 # Yurika-Cloud-Server
-Cloud ini menggunakan database dari mongodb
+Cloud ini dibuat menggunakan database dari mongodb
