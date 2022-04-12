@@ -1,4 +1,6 @@
 {
-    "mongodb_url":"mongodb://localhost:27017",
-    "mongodb_name_database":"YurikaCL"
+    "mongodb_url":"mongodb+srv://YurikaCL:azis050484@yurikacl.qmqzz.mongodb.net/YurikaCL?retryWrites=true&w=majority",
+    "mongodb_name_database":"YurikaCL",
+
+    "PORT":"4000"
 }

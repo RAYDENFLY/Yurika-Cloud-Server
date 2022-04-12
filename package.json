@@ -1,0 +1,28 @@
+{
+    "name": "yurika",
+    "version": "1.0.0",
+    "description": "Yurika Cloud Host",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RAYDENFLY/Yurika-Cloud-Server"
+    },
+    "keywords": [
+        "Cloud Database", "Cloud Host"
+    ],
+    "author": "RAYDENFLY",
+    "license": "GNU",
+    "bugs": {
+        "email": "raydenfly84@gmail.com"
+    },
+    "dependencies": {
+        "express":"4.5.0",
+        "mongodb":"4.17.3"
+    },
+    "engines": {
+        "node": ">=16.6.0"
+    }
+}

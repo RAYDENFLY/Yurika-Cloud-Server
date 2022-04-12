@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb'); // import { MongoClient } from 'mongodb'
-const config = require("../Config/config.json"); // config var
+const QuickDB = require('quick.db'); // import online data base to local_database
+const config = require("../Config/config.json"); // configuration
 const { logger } = require('../../Cloud_Info/Logger'); // send log database
 
 // Connection URL
