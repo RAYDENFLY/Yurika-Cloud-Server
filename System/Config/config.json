@@ -1,5 +1,5 @@
 {
-    "mongodb_url":"mongodb+srv://YurikaCL:azis050484@yurikacl.qmqzz.mongodb.net/YurikaCL?retryWrites=true&w=majority",
+    "mongodb_url":"mongodb+srv://YurikaCL:env@yurikacl.qmqzz.mongodb.net/YurikaCL?retryWrites=true&w=majority",
     "mongodb_name_database":"YurikaCL",
 
     "PORT":"4000"
