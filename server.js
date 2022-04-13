@@ -10,9 +10,9 @@ const flash = require('req-flash');
 const app = express();
 
 // Definisi lokasi file router
-const loginRoutes = require('./src/routes/router-login');
-const registerRoutes = require('./src/routes/router-register');
-const appRoutes = require('./src/routes/router-app');
+const loginRoutes = require('./System/Routes/router-login');
+const registerRoutes = require('./System/Routes/router-register');
+const appRoutes = require('./System/Routes/router-app');
 
 // Configurasi dan gunakan library
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -45,6 +45,17 @@ app.listen(5050, ()=>{
     console.log('Server Berjalan di Port : '+5050);
 });
 
+
+app.use(flash());
+
+// Hapus Cache browser
+app.use(function(req, res, next) {
+    res.setHeader('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
+    res.setHeader('Pragma', 'no-cache');
+    next();
+});
+
+app.set('views',path.join(__dirname,'src/views'));
 
 //Process Server ( Commit by : RAYDENFLY)
 const Replit = (process.env.REPLIT_DB_URL !== undefined);
