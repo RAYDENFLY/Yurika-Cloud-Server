@@ -2,16 +2,14 @@
     "name": "yurika",
     "version": "1.0.0",
     "description": "Yurika Cloud Host",
-    "main": "server.js",
-    "scripts": {
-        "start": "node server.js"
-    },
+    "main": "System/Server/ServerClient",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/RAYDENFLY/Yurika-Cloud-Server"
     },
     "keywords": [
-        "Cloud Database", "Cloud Host"
+        "Cloud Database",
+        "Cloud Host"
     ],
     "author": "RAYDENFLY",
     "license": "GNU",
@@ -19,8 +17,12 @@
         "email": "raydenfly84@gmail.com"
     },
     "dependencies": {
-        "express":"4.5.0",
-        "mongodb":"4.17.3"
+        "dotenv": "^16.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.5.0",
+        "log4js": "^6.4.4",
+        "mongodb": "^4.5.0",
+        "quick.db": "^7.1.3"
     },
     "engines": {
         "node": ">=16.6.0"

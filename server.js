@@ -1,11 +1,11 @@
-const { logger } = require('../../Cloud_Info/Logger');
+const { logger } = require('./System/Client/LogClient.js'); // send log database
 require('dotenv').config();
 const config = require('./System/Config/config.json')
 var express = require('express');
 var app = express();
 
 app.set("view engine", "ejs")
-app.get("../", function (req, res) {
+app.get("./", function (req, res) {
     res.render("index")
 });
 
