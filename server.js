@@ -55,7 +55,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-app.set('views',path.join(__dirname,'src/views'));
+app.set('views',path.join(__dirname,'views'));
 
 //Process Server ( Commit by : RAYDENFLY)
 const Replit = (process.env.REPLIT_DB_URL !== undefined);
