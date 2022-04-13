@@ -3,7 +3,7 @@ const router = require('express').Router();
 // Ambil index.js dari controller dan panggil variabel didalamnya
 const registerController = require('../controllers').register;
 // Definisikan middleware verify.js
-const verifyUser = require('../Client/verify');
+const verifyUser = require('../configs/verify');
 
 // Rute 'http://localhost:5050/register/' digunakan untuk menampilkan form register
 router.get('/', verifyUser.isLogout, registerController.formRegister);
